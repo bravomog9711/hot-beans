@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #5b5443;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #493b27;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            height: 56px;
+            width: auto;
+            margin-right: 12px;
+        }
+
+        .header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.8rem;
+        }
+
+        .buttons {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .buttons button {
+            flex: 1;
+            padding: 12px;
+            background: #293236;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .buttons button:hover {
+            background: #1a1f23;
+        }
+
+        .content {
+            flex: 1;
+            padding: 45px;
+            box-sizing: border-box;
+            color: #ffffff;
+        }
+
+        .demo-section {
+            background-color: #293236;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .demo-section h3 {
+            margin-top: 0;
+            color: #FFD700;
+        }
+
+        .demo-btn {
+            background: #ff8c00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin: 10px 5px 10px 0;
+        }
+
+        .demo-btn:hover {
+            opacity: 0.9;
+        }
+
+        .form-section {
+            background-color: #293236;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .form-section h3 {
+            margin-top: 0;
+            color: #FFD700;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-btn {
+            background: #ff8c00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .form-btn:hover {
+            opacity: 0.9;
+        }
+
+        .site-footer {
+            background-color: #3b2f25;
+            color: #ffffff;
+            padding: 14px 20px;
+            text-align: center;
+            flex-shrink: 0;
+            font-size: 0.95rem;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header class="header">
+        <img src="coffebean.png" alt="Hot Beans Logo" class="logo">
+        <h1>Hot Beans Developers</h1>
+    </header>
+    <div class="buttons">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='Members/Members.html'">Members</button>
+            <button onclick="location.href='WorkWithUs/Work.html'">Work with Us</button>
+            <button onclick="location.href='Location/Location.html'">Locations</button>
+            <button onclick="location.href='Info/Info.html'">Website Info</button>
+    </div>
+
+    <div class="content">
+        <h2>Book a place for our next event!</h2>
+
+
+        <div class="demo-section">
+            <h3>Number of tickets</h3>
+            <p>We will be happy to see you at our event. Please select the number of tickets you want to book.</p>
+            <button id="counterBtn" class="demo-btn">Click me: 0</button>
+        </div>
+
+        <div class="form-section">
+            <h3>Event Registration</h3>
+            <p>Please fill out the form below to complete your registration.</p>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Special Requests:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <button type="submit" class="form-btn">Submit Registration</button>
+            </form>
+        </div>
+
+    <footer class="site-footer">
+        <p>JavaScript</p>
+    </footer>
+
+    <script>
+
+        let count = 0;
+        document.getElementById('counterBtn').addEventListener('click', function() {
+            count = count + 1;
+            this.textContent = 'Number of tickets: ' + count;
+        });
+    </script>
+</body>
+</html>

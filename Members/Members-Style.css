@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #5b5443;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #493b27;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    margin-right: 12px;
+    display: block;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: left;
+}
+.subheader {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    background: #293236;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+
+.section {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    flex-direction: row;
+}
+
+.content {
+    flex: 1;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.content .section {
+    color: #ffffff;
+    background-color: #293236;
+    border-radius: 10px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.content .section img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.content .section p {
+    flex: 1;
+}
+
+.content .section .title {
+    margin-right: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer {
+    background-color: #3b2f25;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 0.95rem;
+}

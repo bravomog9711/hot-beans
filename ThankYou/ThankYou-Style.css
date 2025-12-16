@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background-color: #5b5443;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #493b27;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+    margin-right: 12px;
+    display: block;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: left;
+}
+
+.subheader {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    margin: 0;
+    background-color: #7d6f63;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons button:hover {
+    background-color: #9a8975;
+}
+
+.body-content {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container {
+    background-color: #f5f1ed;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.thank-you-title {
+    font-size: 3rem;
+    color: #493b27;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.thank-you-subtitle {
+    font-size: 1.2rem;
+    color: #7d6f63;
+    margin: 0 0 30px 0;
+    font-style: italic;
+}
+
+.thank-you-message {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.thank-you-message p {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+.thank-you-message h2 {
+    color: #493b27;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.thank-you-message ul {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 15px 0;
+}
+
+.thank-you-message li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.thank-you-message a {
+    color: #8a6f4f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.thank-you-message a:hover {
+    color: #493b27;
+    text-decoration: underline;
+}
+
+.closing {
+    font-size: 1.1rem;
+    margin-top: 30px !important;
+    color: #493b27;
+    font-weight: bold;
+}
+
+.signature {
+    font-style: italic;
+    color: #7d6f63;
+    margin-top: 10px !important;
+}
+
+.site-footer {
+    background-color: #493b27;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    margin-top: auto;
+}
+
+.site-footer p {
+    margin: 0;
+}
